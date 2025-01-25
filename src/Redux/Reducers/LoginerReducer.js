@@ -12,7 +12,10 @@ const LoginerReducer = createSlice({
             state.state = "Admin"
         },
         AsaUser: (state) => {
-            state.state = true
+            state.state = "Rec"
+        },
+        Hod: (state) => {
+            state.state = "Hod"
         },
         Logout: (state) => {
             state.state = false
@@ -20,6 +23,6 @@ const LoginerReducer = createSlice({
     }
 })
 
-export const { Admin, AsaUser ,Logout } = LoginerReducer.actions
+export const { Admin, AsaUser ,Logout , Hod } = LoginerReducer.actions
 
 export default LoginerReducer.reducer;

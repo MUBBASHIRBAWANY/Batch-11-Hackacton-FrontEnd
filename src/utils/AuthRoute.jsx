@@ -9,10 +9,6 @@ const AuthRoute = [
     {
         path : '/login',
         component : <Login />
-    },
-    {
-        path : '/Signup',
-        component : <SignupForm />
     }
 
 ]
