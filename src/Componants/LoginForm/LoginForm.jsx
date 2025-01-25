@@ -15,11 +15,11 @@ const dispatch = useDispatch()
         try{
             const response = await createData('/users/profile', {authorization : Token});
             console.log(response.data.val.Admin)
-            if (response.data.val.Admin == "false"){
+            if (response.data.val.Admin == false){
                 console.log("User")
                 dispatch(AsaUser())
             }
-            else if(response.data.data.val.Admin == 'true'){
+            else if(response.data.val.Admin == true){
                 console.log("Admin")
                 dispatch(Admin())
             }
