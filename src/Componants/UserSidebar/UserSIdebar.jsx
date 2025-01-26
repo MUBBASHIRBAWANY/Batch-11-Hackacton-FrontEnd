@@ -46,6 +46,7 @@ const dispatch = useDispatch()
         console.log("logout")
         Cookies.remove("token")
         dispatch(Logout())
+        navigate('/')
     }
 
   return (
@@ -55,7 +56,7 @@ const dispatch = useDispatch()
       } w-64 bg-gray-950 shadow-lg transition-transform duration-300 ease-in-out z-50 lg:relative lg:translate-x-0`}
     >
       <div className="p-6">
-        <h2 className="text-3xl font-bold text-gray-500">Blog Acm User</h2>
+        <h2 className="text-3xl font-bold text-gray-500">Saylani Acm User</h2>
         <nav className="mt-4">
           <Link
             to='/'
@@ -69,7 +70,7 @@ const dispatch = useDispatch()
               onClick={()=> toggleProfileDropdown()}
               className="w-full flex justify-between items-center py-2.5 px-4 rounded hover:bg-cyan-400 text-white focus:outline-none"
             >
-              Blogs
+              Transactions
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className={`h-5 w-5 transform transition-transform ${
@@ -92,20 +93,15 @@ const dispatch = useDispatch()
                   to='/AddBlog'
                   className="block py-2 px-4 text-sm rounded hover:bg-cyan-400 text-white"
                 >
-                  Add Blog
+                  For New
                 </Link>
                 <Link
                   to="/PurchaseOrderRecived"
                   className="block py-2 px-4 text-sm rounded hover:bg-cyan-400 text-white"
                 >
-                  Approved Blog
+                  For Repeter
                 </Link>
-                <Link
-                  to="/PurchaseOrderRecived"
-                  className="block py-2 px-4 text-sm rounded hover:bg-cyan-400 text-white"
-                >
-                  Pending Blog
-                </Link>
+                
               </div>
             )}
           </div>        
