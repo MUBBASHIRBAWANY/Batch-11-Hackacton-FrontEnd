@@ -1,4 +1,6 @@
+import BenifichryAdd from "../Componants/Benifichry/BenifichryAdd";
 import BenifichryList from "../Componants/Benifichry/BenifichryList";
+import BeneficiaryReceipt from "../Componants/Benifichry/BenifichryRecipt";
 import Dashboard from "../Componants/Dashboard/Dashboard";
 import AddDeparment from "../Componants/Department/DepartmentAdd";
 import DepartmentEdit from "../Componants/Department/DepartmentEdit";
@@ -36,6 +38,12 @@ const routes = [
     },{
         path : '/Benifichry',
         component : <BenifichryList />
+    },{
+        path : '/Benifichry/Add',
+        component : <BenifichryAdd />
+    },{
+        path : '/Benifichry/view/:id',
+        component : <BeneficiaryReceipt />
     }
     
 

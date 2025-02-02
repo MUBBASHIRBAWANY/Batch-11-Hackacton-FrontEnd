@@ -46,7 +46,7 @@ const dispatch = useDispatch()
         console.log("logout")
         Cookies.remove("token")
         dispatch(Logout())
-        window.location('/')
+        navigate('/')
     }
 
   return (

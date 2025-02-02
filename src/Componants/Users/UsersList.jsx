@@ -20,7 +20,7 @@ const UsersList = () => {
     const dispatch = useDispatch()
     const getdata = async () => {
 
-      const res = await axios.get("http://localhost:5000/users")
+      const res = await axiosInstance.get("users")
       const res2 = await axiosInstance.get("/dep")
 
       dispatch(fetchUsers(res?.data?.data))
@@ -81,7 +81,7 @@ const UsersList = () => {
         <div className="container mx-auto p-4">
           <div className="flex flex-wrap justify-between items-center mb-4">
             <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2 md:mb-0">
-              Blogger List
+              User List
             </h1>
             <Link to="/Users/Add">
               <button className="bg-blue-600 p-2 md:p-3 m-1 rounded-lg text-white text-sm md:text-base">

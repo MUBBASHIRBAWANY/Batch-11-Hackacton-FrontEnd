@@ -34,10 +34,8 @@ const Adduser = () => {
                     'Content-Type': 'multipart/form-data',
                 },
             });
-            console.log(res.status)
-            if (res.status === 201) {
-                navigate('/users')
-            }
+            
+            navigate('/users')
         } catch (err) {
             console.log(err)
         };

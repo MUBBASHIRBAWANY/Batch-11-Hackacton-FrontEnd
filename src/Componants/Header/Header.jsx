@@ -51,7 +51,7 @@ const toggleSidebar = () => {
             />
           </svg>
         </button>
-        <h1 className="text-xl font-bold text-gray-800">Inventory Mangment System by MB Tech</h1>
+        <h1 className="text-xl font-bold text-gray-800">Benifishrry System by MB Tech</h1>
         <div className="flex items-center space-x-4">
           <button className="text-gray-600 hover:text-gray-800 focus:outline-none">
             
